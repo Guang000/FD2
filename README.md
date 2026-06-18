@@ -11,7 +11,7 @@ A dedicated dataset distillation framework for fine-grained recognition that loc
 
 * Code will be released soon!
 * June 2026: Our paper has been accepted to ECCV 2026!
-* March 2026: The preprint was released.
+* March 2026: Preprint was released.
 
 ## 🎯 Key Contributions
 
