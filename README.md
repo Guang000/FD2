@@ -4,4 +4,4 @@
 
 - Code will be released soon.
 - June 2026: Our paper has been accepted to ECCV 2026!
-- March 2025: Preprint was released.
+- March 2026: The preprint was released.
