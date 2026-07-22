@@ -5,11 +5,7 @@
 
 A dedicated dataset distillation framework for fine-grained recognition that localizes discriminative regions, constructs fine-grained representations, and preserves diverse class-specific characteristics in distilled datasets.
 
-<p align="center">
-  <img src="figure/overview.jpg" alt="Overview of FD2" width="800">
-</p>
-
-* Code will be released soon!
+* The code is available in this repository.
 * June 2026: Our paper has been accepted to ECCV 2026!
 * March 2026: Preprint was released.
 
@@ -30,6 +26,31 @@ A dedicated dataset distillation framework for fine-grained recognition that loc
 * **Seamless Integration and Strong Transferability**
   Can be readily integrated into existing decoupled dataset distillation pipelines and consistently improves performance across multiple fine-grained and general image classification datasets.
 
+## Installation
+
+FD² is built on [CV-DD](https://github.com/Jiacheng8/CV-DD). Please refer to the CV-DD repository for environment setup and installation instructions.
+
+## Data Preparation Utilities
+
+* `RDED_patch.py` generates patch based initialization samples from the original training set with a pretrained classifier.
+* `get_small_ipc_from_big_ipc.py` transfers a subset of distilled images from a larger IPC setting to a smaller one. After generating the IPC=5 distilled set, set `target_ipc` to `3` or `1` and update the source and target paths to construct the corresponding smaller distilled set.
+
+## Main Results
+
+FD² consistently improves SRe²L++ and FADRM+ on CUB-200-2011, FGVC-Aircraft, and Stanford Cars across IPC=1, 3, and 5. The improvements are especially pronounced on FGVC-Aircraft and Stanford Cars, demonstrating the value of preserving localized and class specific fine-grained cues.
+
+<p align="center">
+  <img src="figure/MainTable.png" alt="Main results of FD2 on fine-grained datasets" width="1000">
+</p>
+
+## Visualization of Distilled Samples
+
+Compared with the corresponding baselines, integrating FD² produces distilled samples with clearer local structures, richer texture details, and more discriminative class specific cues.
+
+<p align="center">
+  <img src="figure/VisualizationDistilledSamples.png" alt="Visualization of distilled samples generated with FD2" width="1000">
+</p>
+
 ## Citing FD²
 
 If you find this project useful for your research, please use the following BibTeX entry.
@@ -42,4 +63,3 @@ If you find this project useful for your research, please use the following BibT
   year={2026}
 }
 ```
-

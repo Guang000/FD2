@@ -1,0 +1,20 @@
+# Local agent and editor settings
+/.agents/
+/.idea/
+/.vscode/
+
+# Recover files
+/recover/attention_similarity_all_classes.py
+/recover/heat_maps.py
+/recover/recover_FADRM.py
+/recover/recover.py
+/recover/scripts/CUB_imsize224_experiments/attention_image.sh
+/recover/scripts/CUB_imsize224_experiments/attention_similarity_all_classes.sh
+
+# Relabel files
+/relabel/relabel.py
+/relabel/scripts/CUB_imsize224_experiment/rec_res18_ipc1_rel_res18_bs20.sh
+
+# Validate files
+/validate/train_fkd.py
+/validate/scripts/CUB_imsize224_experiments/rec_res18_ipc1_rel_res18_bs20_val_res18.sh
