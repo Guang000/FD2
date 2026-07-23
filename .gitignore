@@ -18,3 +18,7 @@
 # Validate files
 /validate/train_fkd.py
 /validate/scripts/CUB_imsize224_experiments/rec_res18_ipc1_rel_res18_bs20_val_res18.sh
+
+# Squeeze files
+/squeeze/squeeze.py
+/squeeze/scripts/squeeze_CUB_imsize224_resnet18.sh
