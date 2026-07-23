@@ -4,10 +4,10 @@ PARENT_DIR="$(dirname "$SCRIPT_DIR")"
 ROOT_DIR="$(dirname "$PARENT_DIR")"
 source "$ROOT_DIR/config.sh"
 mkdir -p "$SCRIPT_DIR"/logs
-DATASET_NAME=CUB_imsize224
-M_NUM=8
-CAL_RATIO=5e-1
-modelnames_lrs=("ResNet18 1e-3")
+DATASET_NAME=A_imsize224
+M_NUM=32
+CAL_RATIO=4e-1
+modelnames_lrs=("ResNet50 1e-3")
 for modelname_lr in "${modelnames_lrs[@]}"; do
   read -r modelname lr <<< "${modelname_lr}"
   PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True \
