@@ -1,7 +1,7 @@
 # 🔬 FD²: A Dedicated Framework for Fine-Grained Dataset Distillation (ECCV 2026)
 
 [![arXiv](https://img.shields.io/badge/arXiv-2603.25144-b31b1b.svg)](https://arxiv.org/abs/2603.25144)
-[![Conference](https://img.shields.io/badge/ECCV-2026-blue.svg)](https://eccv.ecva.net/)
+[![Conference](https://img.shields.io/badge/ECCV-2026-blue.svg)](https://eccv.ecva.net/Conferences/2026)
 
 FD² is a dedicated dataset distillation framework for fine-grained recognition. It localizes discriminative regions, constructs fine-grained representations, and preserves diverse class-specific characteristics in distilled datasets.
 
